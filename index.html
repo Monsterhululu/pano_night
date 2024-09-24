@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama Viewer</title>
+    <style>
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 700px; /* Default height for larger screens */
+            overflow: hidden;
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        @media (max-width: 767px) { /* Adjustments for smaller screens */
+            .iframe-container {
+                height: 500px; /* Adjust this value as needed for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe title="Panorama Viewer" scrolling="no" src="https://renderstuff.com/tools/360-panorama-web-viewer-embed/?image=https://iili.io/dsL3fSt.jpg"></iframe>
+    </div>
+</body>
+</html>
